@@ -1,0 +1,87 @@
+[
+    {
+     "id": 1,
+      "title":"Adicolor Classic Joggers",
+      "category": "Dress",
+      "price": 63.85,
+      "image": "/images/product1.png"
+    },
+    {
+      "id": 2,
+      "title":"Nike Sportswear Fetura Luxe",
+      "category": "Bag",
+     "price": 130.00,
+      "image": "/images/product2.png"
+    },
+    {
+      "id": 3,
+      "title":"Geometric print Scarf",
+      "category": "Dress",
+      "price": 53.00,
+      "image": "/images/product3.png"
+    },
+    {
+      "id": 4,
+      "title":"Yellow Reserved Hoodie",
+      "category": "Hoodies",
+      "price": 63.85,
+      "image": "/images/product4.png"
+    },
+    {
+      "id": 5,
+      "title":"Basic Dress Green",
+      "category": "Dress",
+      "price": 236.85,
+      "image": "/images/product5.png"
+    },
+    {
+      "id": 6,
+      "title":"Nike Air Zoom Pegasus",
+      "category": "Shoe",
+      "price": 198.00,
+      "image": "/images/product6.png"
+    },
+    {
+      "id": 7,
+      "title":"Nike Repel Miler",
+      "category": "Hoodies",
+      "price": 120.50,
+      "image": "/images/product7.png"
+    },
+    {
+      "id": 8,
+      "title":"Nike Sportswear Fetura Luxe",
+      "category": "Bag",
+     "price": 160.05,
+      "image": "/images/product8.png"
+    },
+    {
+      "id": 9,
+      "title":"Nike Air Zoom Pegasus",
+      "category": "Shoe",
+      "price": 160.85,
+      "image": "/images/product9.png"
+    },
+    {
+      "id": 10,
+      "title":"Yellow Reserved Hoodie",
+      "category": "Hoodies",
+      "price": 63.85,
+      "image": "/images/product10.png"
+    },
+    {
+      "id": 11,
+      "title":"Yellow Reserved Hoodie",
+      "category": "Bag",
+      "price": 63.85,
+      "image": "/images/product11.png"
+    },
+    {
+      "id": 12,
+      "title":"Yellow Reserved Hoodie",
+      "category": "Hoodies",
+      "price": 63.85,
+      "image": "/images/product12.png"
+    }
+  ]
+

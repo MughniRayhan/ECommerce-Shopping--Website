@@ -37,15 +37,17 @@ function Hero() {
           "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae omnis aspernatur itaque officia quasi, iste placeat asperiores, laboriosam esse inventore aliquam eligendi corporis iure labore. Quas expedita esse architecto asperiores?"
         },
     ];
+
   return (
     <div className='relative overflow-hidden min-h-[550px] sm:min-h-[650px] 
   bg-gray-100 flex justify-center items-center dark:bg-gray-950 dark:text-white'>
         <div className='h-[700px] w-[700px] bg-primary/40 absolute -top-1/2  right-0 rounded-3xl rotate-45 -z[8]'>
         </div>
         <div className='container pb-8 sm:pb-0'>
+          {/* slider */}
          <Slider {...settings}>
     {imageList.map((data)=>(
-             <div>
+             <div key={data.id}>
              <div className='grid grid-cols-1 sm:grid-cols-2 '>
                <div className='flex flex-col justify-center gap-4 pt-12 sm:pt-0 text-center sm:text-left order-2 sm:order-1 relative z-10 '>
                  <h1 className='text-5xl sm:text-6xl lg:text-7xl font-bold'>{data.title}</h1>

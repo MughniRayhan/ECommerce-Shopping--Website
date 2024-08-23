@@ -1,17 +1,16 @@
 import React from 'react'
 import Navbar from './Layout/Navbar'
-import Hero from './Components/Hero'
+import { Outlet } from 'react-router-dom'
 
 function App() {
+  
   return (
     
-        <div>
-          
-  
-   <Navbar/>
-   <Hero/>
-   
-    </div>
+    <div>
+    <Navbar />
+    
+    <Outlet />
+  </div>
   )
 }
 
