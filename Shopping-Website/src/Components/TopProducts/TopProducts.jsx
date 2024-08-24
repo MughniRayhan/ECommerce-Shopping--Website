@@ -40,7 +40,7 @@ function TopProducts() {
    relative shadow-xl duration-high group max-w-[300px]'>
 
     {/* image  */}
-    <div className='h-[100px]'>
+    <div className='h-[50px]'>
         <img src={data.img} alt={data.title}
         className='max-w-[140px] block mx-auto transform -translate-y-20 group-hover:scale-105 duration-300 drop-shadow-md' />
     </div>

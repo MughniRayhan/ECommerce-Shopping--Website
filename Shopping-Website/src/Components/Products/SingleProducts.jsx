@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { FaStar} from "react-icons/fa";
+import { FaArrowAltCircleRight } from "react-icons/fa";
 function SingleProducts() {
     const {id} =useParams()
       
     const [products,setProducts] = useState([]);
+    const [count,setCount] =useState(0)
     
     useEffect(()=>{
         const fetchData = async() =>{
@@ -32,7 +34,7 @@ function SingleProducts() {
             <div className='grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 gap-6 h-max'>
                 
               <div>
-                <img src={image} alt={title} className='w-full h-[450px]' />
+                <img src={image} alt={title} className='w-full h-[400px] rounded-lg' />
               </div>
 
               {/* product details */}
@@ -50,9 +52,35 @@ function SingleProducts() {
                 <FaStar />
                 </span>
 
-                <p className='text-xl text-primary font-semibold sm:text-2xl'>${price}</p>
-                
+                <p className='text-xl text-red-500 font-semibold sm:text-2xl mb-1'>${price}</p>
+
+                {/* quantity */}
+                <div className='text-left flex flex-row gap-4 w-full '>
+                  <label className='font-semibold'>Quantity</label>
+                    <div className='flex flex-row gap-1 text-primary
+                     font-semibold'>
+                      <button 
+                      onClick={()=>setCount((count)=>count-1)} 
+                      disabled={count===0 ? true : false}
+                      className='px-2  border border-gray-400  hover:border-primary'
+                      >-</button>
+                      <h3 className='px-6  border border-gray-400 hover:border-primary'>{count}</h3>
+                      <button  onClick={()=>setCount((count)=>count+1)}
+                      className='px-2  border border-gray-400 hover:border-primary' >+</button>
+                    </div>
+                </div>
+
+                {/* order button */}
+                <div className='w-full text-left my-4'>
+                  <button className='flex justify-center items-center gap-2 w-full py-3 px-4
+                  bg-primary text-white font-bold rounded-lg 
+                   shadow-slate-600 hover:bg-white hover:text-primary border border-primary lg:m-0 md:px-6'>
+                    <span>Order Now</span>
+                    <FaArrowAltCircleRight />
+                  </button>
+                </div>
               </div>
+
             </div>
         </div>
       </div>
