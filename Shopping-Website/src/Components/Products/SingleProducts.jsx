@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import { FaStar} from "react-icons/fa";
 function SingleProducts() {
     const {id} =useParams()
@@ -22,12 +22,17 @@ function SingleProducts() {
 
     const {title,category,price,image} = products;
   return (
-    <div className='pt-24 max-w-screen-2xl container h-screen mx-auto xl:px-28 px-4  bg-white dark:bg-gray-900 dark:text-white'>
+    <div className='pt-12 max-w-screen-2xl container sm:h-screen mx-auto xl:px-28 px-4  bg-white dark:bg-gray-900 dark:text-white'>
+        <Link to='/' className=' sm:hidden  
+                      hover:text-primary  px-2 rounded-full'>
+                     Go to Home Page
+                        </Link>
       <div className='p-3 max-w-7xl m-auto'>
         <div className='mt-6 sm:mt-10'>
             <div className='grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 gap-6 h-max'>
+                
               <div>
-                <img src={image} alt={title} className='w-full' />
+                <img src={image} alt={title} className='w-full h-[450px]' />
               </div>
 
               {/* product details */}
@@ -46,6 +51,7 @@ function SingleProducts() {
                 </span>
 
                 <p className='text-xl text-primary font-semibold sm:text-2xl'>${price}</p>
+                
               </div>
             </div>
         </div>
