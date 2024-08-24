@@ -36,11 +36,12 @@ function TopProducts() {
 
 <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-20 md:gap-5 place-items-center '>
 {topProductsData.map((data)=>(
-   <div className='rounded-2xl bg-white dark:bg-gray-800 hover:bg-black/80 dark:hover:bg-primary hover:text-white 
+   <div key={data.id}
+   className='rounded-2xl bg-white dark:bg-gray-800 hover:bg-black/80 dark:hover:bg-primary hover:text-white 
    relative shadow-xl duration-high group max-w-[300px]'>
 
     {/* image  */}
-    <div className='h-[50px]'>
+    <div className='h-[70px]'>
         <img src={data.img} alt={data.title}
         className='max-w-[140px] block mx-auto transform -translate-y-20 group-hover:scale-105 duration-300 drop-shadow-md' />
     </div>
