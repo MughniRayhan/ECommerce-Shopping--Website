@@ -8,7 +8,8 @@ function Navbar() {
     <div className='shadow-lg bg-white dark:bg-gray-900 dark:text-white   z-40 sticky top-0  '>
         <div className='bg-primary/40 py-3 px-16  sm:py-2 relative'>
             <div className='container gap-4 flex justify-between items-center'>
-                 <div className='w-full'>
+                 <div className=' flex gap-2'>
+                  <img src="/images/logo.png" alt="" className='w-10 '/>
                   <h1 className='font-bold text-2xl sm:text-3xl'>Shop</h1>
                  </div>
 

@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react'
+import { MdLightMode } from "react-icons/md";
+import { MdOutlineDarkMode } from "react-icons/md";
 
 function DarkMood() {
     const [theme, setTheme] = useState(
@@ -19,20 +21,22 @@ function DarkMood() {
     },[theme])
   return (
     <div className='relative'>
-        <button 
-        className={` absolute -top-2 w-[40px] lg:w-[50px] h-[20px] rounded-full p-2
-         bg-gradient-to-r from-sky-600 to-white drop-shadow-[1px_1px_1px_rgba(0,0,0,0,1)] 
+        {theme==="light" ? <MdOutlineDarkMode
+        
+        className={` absolute -top-4 text-3xl text-gray-500 
+         drop-shadow-[1px_1px_1px_rgba(0,0,0,0,1)] 
          z-10 ${theme === "dark" ? "opacity-0" : "opacity-100"}`}
          onClick={()=>setTheme(theme=== "light"  ? "dark" : "light")}
-         ></button>
+         /> : < MdLightMode 
+         className=' absolute -top-4  
+         text-3xl text-yellow-500 drop-shadow-[1px_1px_1px_rgba(0,0,0,0,1)]' 
+          onClick={()=>setTheme(theme=== "light"  ? "dark" : "light")}
+          /> }
+        
 
-<button 
-        className=' absolute -top-2  w-[40px] lg:w-[50px] h-[20px] rounded-full p-2
-         bg-gradient-to-r from-white to-gray-900 drop-shadow-[1px_1px_1px_rgba(0,0,0,0,1)]' 
-         onClick={()=>setTheme(theme=== "light"  ? "dark" : "light")}
-         >
 
-         </button>
+
+         
     </div>
   )
 }

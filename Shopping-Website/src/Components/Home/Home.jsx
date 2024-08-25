@@ -5,15 +5,17 @@ import TopProducts from '../TopProducts/TopProducts'
 import Banner from '../Banner/Banner'
 import Subscribe from '../Subscribe/Subscribe'
 import Testimonials from '../Testimonials/Testimonials'
+import Footer from '../Footer/Footer'
 function Home() {
   return (
-    <div className=' bg-white dark:bg-gray-900 dark:text-white'>
+    <div >
         <Hero />
         <Products/>
         <TopProducts/>
         <Banner/>
         <Subscribe/>
         <Testimonials/>
+        <Footer/>
     </div>
   )
 }
