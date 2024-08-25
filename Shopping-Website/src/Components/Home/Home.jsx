@@ -4,6 +4,7 @@ import Products from '../Products/Products'
 import TopProducts from '../TopProducts/TopProducts'
 import Banner from '../Banner/Banner'
 import Subscribe from '../Subscribe/Subscribe'
+import Testimonials from '../Testimonials/Testimonials'
 function Home() {
   return (
     <div className=' bg-white dark:bg-gray-900 dark:text-white'>
@@ -12,6 +13,7 @@ function Home() {
         <TopProducts/>
         <Banner/>
         <Subscribe/>
+        <Testimonials/>
     </div>
   )
 }
