@@ -3,7 +3,7 @@ import { IoIosSearch } from "react-icons/io";
 import { FaCartShopping } from "react-icons/fa6";
 import { Link } from 'react-router-dom';
 import DarkMood from './DarkMood';
-function Navbar() {
+function Navbar({handleOrder}) {
   return (
     <div className='shadow-lg bg-white dark:bg-gray-900 dark:text-white   z-40 sticky top-0  '>
         <div className='bg-primary/40 py-3 px-16  sm:py-2 relative'>
@@ -24,7 +24,7 @@ function Navbar() {
                   </div>
 
                  {/* order button */}
-                  <button
+                  <button onClick={()=>handleOrder()}
                   className='bg-gradient-to-r from-primary to-secondary text-white text-xl cursor-pointer py-2 px-2 rounded-full'>
                     <FaCartShopping />
                   </button>

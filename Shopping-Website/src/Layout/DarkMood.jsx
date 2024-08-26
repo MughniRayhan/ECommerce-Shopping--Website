@@ -18,25 +18,26 @@ function DarkMood() {
             element.classList.remove("dark");
             localStorage.setItem("theme", "light")
         }
-    },[theme])
+    },[theme]);
+    
   return (
     <div className='relative'>
-        {theme==="light" ? <MdOutlineDarkMode
+        {
+           theme==="light" ? 
+           <MdOutlineDarkMode
+           className={` absolute -top-4 text-3xl text-gray-500 
+            drop-shadow-[1px_1px_1px_rgba(0,0,0,0,1)] 
+            z-10 ${theme === "dark" ? "opacity-0" : "opacity-100"}`}
+            onClick={()=>setTheme(theme=== "light"  ? "dark" : "light")}
+            />
+             : 
+             < MdLightMode 
+            className=' absolute -top-4  
+            text-3xl text-yellow-500 drop-shadow-[1px_1px_1px_rgba(0,0,0,0,1)]' 
+             onClick={()=>setTheme(theme=== "light"  ? "dark" : "light")}
+             />
+         }
         
-        className={` absolute -top-4 text-3xl text-gray-500 
-         drop-shadow-[1px_1px_1px_rgba(0,0,0,0,1)] 
-         z-10 ${theme === "dark" ? "opacity-0" : "opacity-100"}`}
-         onClick={()=>setTheme(theme=== "light"  ? "dark" : "light")}
-         /> : < MdLightMode 
-         className=' absolute -top-4  
-         text-3xl text-yellow-500 drop-shadow-[1px_1px_1px_rgba(0,0,0,0,1)]' 
-          onClick={()=>setTheme(theme=== "light"  ? "dark" : "light")}
-          /> }
-        
-
-
-
-         
     </div>
   )
 }

@@ -3,6 +3,7 @@ import { Link, useParams } from 'react-router-dom'
 import { FaStar} from "react-icons/fa";
 import { FaArrowAltCircleRight } from "react-icons/fa";
 function SingleProducts() {
+ 
     const {id} =useParams()
       
     const [products,setProducts] = useState([]);
@@ -74,7 +75,9 @@ function SingleProducts() {
                 <div className='w-full text-left my-4'>
                   <button className='flex justify-center items-center gap-2 w-full py-3 px-4
                   bg-primary text-white font-bold rounded-lg 
-                   shadow-slate-600 hover:bg-white hover:text-primary border border-primary lg:m-0 md:px-6'>
+                   shadow-slate-600 hover:bg-white hover:text-primary border border-primary lg:m-0 md:px-6'
+                   onClick={()=>handleOrder()}
+                   >
                     <span>Order Now</span>
                     <FaArrowAltCircleRight />
                   </button>

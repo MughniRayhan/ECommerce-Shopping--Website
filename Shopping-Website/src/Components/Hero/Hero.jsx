@@ -1,7 +1,7 @@
 import React from 'react'
 import Slider from "react-slick";
 
-function Hero() {
+function Hero({handleOrder}) {
     var settings = {
         dots: false,
         arrows: false,
@@ -54,7 +54,9 @@ function Hero() {
                  <p className='text-sm'>{data.description}</p>
                 <div>
                 <button className='bg-gradient-to-r from-primary to-secondary
-                      hover:scale-105 duration-200 text-white mt-2 py-2 px-4 rounded-full'>
+                      hover:scale-105 duration-200 text-white mt-2 py-2 px-4 rounded-full'
+                      onClick={()=>handleOrder()}
+                      >
                        Order Now
                  </button>
                 </div>
