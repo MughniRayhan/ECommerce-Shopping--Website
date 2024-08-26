@@ -24,8 +24,8 @@ function TopProducts({handleOrder}) {
     ]
   return (
     <div>
-        <div className='container mx-auto '>
-        <div className='text-left mb-28  mx-auto'>
+        <div className='container mx-auto'>
+        <div className='text-left mb-28  mx-auto px-4 sm:px-0'>
         <p className='text-sm text-primary'>Top Rated Products For You</p>
         <h1 className='text-3xl font-bold'>Best Products</h1>
         <p className='text-xs text-gray-400'>Lorem ipsum dolor sit amet, consectetur

@@ -25,14 +25,14 @@ function SingleProducts() {
 
     const {title,category,price,image} = products;
   return (
-    <div className='pt-12 max-w-screen-2xl container sm:h-screen mx-auto xl:px-28 px-4  bg-white dark:bg-gray-900 dark:text-white'>
+    <div className='pt-12  max-w-screen-2xl container sm:h-screen mx-auto xl:px-28 px-4  bg-white dark:bg-gray-900 dark:text-white'>
         <Link to='/' className=' sm:hidden  
                       hover:text-primary  px-2 rounded-full'>
                      Go to Home Page
                         </Link>
-      <div className='p-3 max-w-7xl m-auto'>
+      <div className='p-3 max-w-7xl m-auto '>
         <div className='mt-6 sm:mt-10'>
-            <div className='grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 gap-6 h-max'>
+            <div className='grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 gap-6 h-max '>
                 
               <div>
                 <img src={image} alt={title} className='w-full h-[400px] rounded-lg' />
