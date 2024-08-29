@@ -24,7 +24,7 @@ import { FaInstagram,FaFacebook,FaLinkedin, FaLocationArrow, FaMobileAlt } from 
 
 function Footer() {
   return (
-    <div className=' text-white  bg-black' >
+    <div className=' text-white  bg-stone-800' >
       
         <div className='container mx-auto '>
             <div className='grid md:grid-cols-3  pt-5 pb-44  '>

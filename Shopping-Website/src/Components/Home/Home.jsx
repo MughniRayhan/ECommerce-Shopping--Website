@@ -23,7 +23,7 @@ function Home() {
         <Banner/>
         <Subscribe/>
         <Testimonials/>
-        <Footer/>
+       
         <CustomerOrderSection order={order} setOrder={setOrder}/>
     </div>
    

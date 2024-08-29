@@ -9,7 +9,7 @@ function Subscribe() {
             <h1 className='text-2xl text-white text-center sm:text-left sm:text-4xl font-semibold'>Get Notified About New Product</h1>
          <input type="text"
          placeholder='Enter Your Email' 
-         className=' w-full p-3   '
+         className=' w-full p-3  focus:outline-none rounded  '
          />
          </div>
         </div>
